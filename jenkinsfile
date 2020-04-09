@@ -37,7 +37,7 @@ pipeline {
       stage('output') {
          steps {
              sh ' ls '
-            sh "java -jar target/PS-weekly-java-project-1.0-SNAPSHOT.jar PS.maven.quick.App "
+            sh "java -cp target/PS-weekly-java-project-1.0-SNAPSHOT.jar PS.maven.quick.App "
 
 
          }}
