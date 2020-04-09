@@ -35,6 +35,7 @@ pipeline {
       }
       stage('output') {
          steps {
+             sh 'java -version'
             sh "java -jar target/PS-weekly-java-project-1.0-SNAPSHOT.jar"
 
 
