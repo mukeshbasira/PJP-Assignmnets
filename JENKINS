@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    tools {
+        maven 'maven'
+        jdk 'jdk8'
+        git 'git'
+    }
+    stages {
+      
+        stage ('Build') {
+            steps {
+                sh 'mvn -Dmaven.test.failure.ignore=true install'
+            }
+
+        }
+    }
+}
