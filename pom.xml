@@ -16,15 +16,14 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                  <archive>
-                    <manifest>
-
-                    <!-- give full qualified name of your main class-->
-                      <mainClass>PS.maven.quick.App</mainClass>
-
-                    </manifest>
-                  </archive>
-                </configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>PS.maven.quick.App</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
     </plugin>
  </plugins>
 </build>
