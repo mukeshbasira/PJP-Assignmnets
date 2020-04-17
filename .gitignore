@@ -1,7 +1,7 @@
-/target
+JenkinsAssignment/target
 /.DS_Store
 .classpath
 .project
 /bin
 /.settings
-/MongoDB_Assignemnt/mongodb
+/MongoDB_Assignment/mongodb
