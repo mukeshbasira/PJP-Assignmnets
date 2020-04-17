@@ -4,3 +4,6 @@
 .project
 /bin
 /.settings
+/mongodb/mb0
+/mongodb/mb1
+/mongodb/mb2
