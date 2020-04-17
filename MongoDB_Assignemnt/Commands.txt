@@ -1,0 +1,7 @@
+mongod --port 27017 --dbpath /Users/mukeshbasira/Documents/PS-weekly-java-project/MongoDB_Assignemnt/mongodb/mb0  --replSet mb0
+
+mongod --port 27018 --dbpath /Users/mukeshbasira/Documents/PS-weekly-java-project/MongoDB_Assignemnt/mongodb/mb1  --replSet mb0
+
+mongod --port 27019 --dbpath /Users/mukeshbasira/Documents/PS-weekly-java-project/MongoDB_Assignemnt/mongodb/mb2  --replSet mb0
+
+mongo --port 27017
