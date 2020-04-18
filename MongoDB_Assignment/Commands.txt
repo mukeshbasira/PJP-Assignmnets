@@ -16,3 +16,5 @@ cfg.members[2].priority = 0
 cfg.members[2].hidden = true
 cfg.members[2].slaveDelay = 3600
 rs.reconfig(cfg)
+
+rs.slaveOk() # read from slaves for user2
