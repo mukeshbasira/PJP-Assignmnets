@@ -9,5 +9,7 @@ WEEK 2 BATCH 2
 ![Alt text](MongoDB_Assignment/UML.png?raw=true "UML_Diagram_For_DB")
 
 WEEK 3 BATCH 1
+
 Accept username from user and print prime equivalent of that
-example - FADE -> d,2,7,b. (hexadecimal equivalent)
+example -
+ FADE -> d,2,7,b. (hexadecimal equivalent)
