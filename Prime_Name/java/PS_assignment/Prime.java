@@ -1,4 +1,4 @@
-package PS.maven.quick;
+package PS_assignment;
 
 public class Prime {
 	private Integer firstPrime ;
@@ -17,7 +17,7 @@ public class Prime {
 	}
 	private Boolean isPrime(Integer a)
 	{
-		for(int i =firstPrime;i< Math.sqrt(a);i++  )
+		for (int i = firstPrime; i <= Math.sqrt(a); i++)
 		{
 			if(a%i==0)
 			{
@@ -29,11 +29,11 @@ public class Prime {
 	}
 
 	public Prime() {
-		this(2);
+		this(1);
 	}
 
 	public Prime(Integer firstPrime) {
-		this.firstPrime = firstPrime;
+		this.firstPrime = 2;
 		this.currentPrimeInteger = firstPrime;
 	}
 
