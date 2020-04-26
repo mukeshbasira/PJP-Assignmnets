@@ -18,7 +18,12 @@ public class App
 		try (Scanner myscan = new Scanner(System.in)) {
 			System.out.println("Enter name");
 			String userName = myscan.nextLine();
-			System.out.println("Username in Prime is: " + primeArray.toPrime(userName));
+			if (userName.isEmpty()) {
+				System.out.println("please enter a name");
+
+			} else {
+				System.out.println("Username in Prime is: " + primeArray.toPrime(userName));
+		}
 			myscan.close();
 		} catch (InputMismatchException e) {
 			System.out.println(e + " **please enter a String input** ");
