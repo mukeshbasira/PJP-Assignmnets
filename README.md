@@ -36,4 +36,4 @@ GoodEvening
 3. When the user gives GoodBye, which is not there in the Map, ask user if he/she want to add that to the list, when pressed "1", then ask for the synonym in the loop till user enters a empty string, and the given word and synonym to be updated in the map.
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------------------------
