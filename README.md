@@ -33,7 +33,7 @@ GoodEvening
 
 2. use scanner to accept the string from the end user, assuming if the user gives: GoodMorning, show the values associated for the same.
 
-3. When the user gives GoodBye, which is not there in the Map, ask user if he/she want to add that to the list, when pressed "Y", then ask for the synonym in the loop till user enters a empty string, and the given word and synonym to be updated in the map.
+3. When the user gives GoodBye, which is not there in the Map, ask user if he/she want to add that to the list, when pressed "1", then ask for the synonym in the loop till user enters a empty string, and the given word and synonym to be updated in the map.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
