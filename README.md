@@ -64,7 +64,8 @@ class Question {
                 private String correctOpt;
 }
 
-2. user daemon threads to tracking (didn't used threads as of now +Timer)
+2. user daemon threads to tracking
+(didn't used threads as of now + Using  TimerTask )
     --- !! working on thread method ---
 
 
