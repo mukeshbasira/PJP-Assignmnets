@@ -22,7 +22,7 @@ public class TimerInput {
 	public String getInput() throws Exception {
 		Timer timer = new Timer();
 		timer.schedule(task, 10 * 1000);
-		System.out.println("Input a option within 10 seconds: ");
+		System.out.println("Input a option within 10 seconds OR PRESS 1 For Next Question ");
 		BufferedReader inBufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		str = inBufferedReader.readLine();
 		timer.cancel();

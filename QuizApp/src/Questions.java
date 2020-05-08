@@ -29,7 +29,7 @@ public class Questions {
 	public boolean hasNextQues() {
 
 		if (listquestions.size() - 1 < quesNumber) {
-			System.out.println("no more questions");
+			System.out.println("no more questions available");
 			return false;
 		}
 		return true;
@@ -40,14 +40,29 @@ public class Questions {
 	}
 
 	public String options() {
-		return ((listquestions.get(quesNumber)).get("options")).toString();
+
+		JSONObject options = (JSONObject) ((listquestions.get(quesNumber)).get("options"));
+		return ("\nA ->" + options.get(
+				"A")
+		.toString()
+		+
+		"\nB ->" + options.get("B").toString() + "\nC ->" + options.get("C").toString()
+		+ "\nD ->"
+		+ options.get("D").toString());
 
 	}
 
 	public void incQuesCount() {
-		// TODO Auto-generated method stub
 		quesNumber++;
 
+
+	}
+
+	public boolean isValidOptionSelected(String s) {
+		if (s.equals("A") || s.equals("B") || s.equals("C") || s.equals("D")) {
+			return true;
+		}
+		return false;
 
 	}
 

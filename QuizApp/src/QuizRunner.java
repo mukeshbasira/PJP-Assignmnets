@@ -11,6 +11,7 @@ public class QuizRunner {
 		while (questions.hasNextQues()) {
 			System.out.println("Question --> " + questions.nextQues());
 			System.out.println("options are  --> " + questions.options());
+
 			TimerInput input = new TimerInput();
 			String str = "";
 			try {
@@ -24,14 +25,19 @@ public class QuizRunner {
 			} else if (str.equals("0")) {
 				break;
 			} else {
+				if (questions.isValidOptionSelected(str.toUpperCase())) {
 
-				if (!str.isEmpty() && questions.isCorrect(str.toUpperCase())) {
-					System.out.println("corrrect");
+					if (!str.isEmpty() && questions.isCorrect(str.toUpperCase())) {
+						System.out.println("corrrect");
+					} else {
+						System.out.println("incorrect");
+					}
+					questions.incQuesCount();
 				} else {
-					System.out.println("incorrect");
+					System.out.println("not valid option selected");
 				}
-				questions.incQuesCount();
-		}
+
+			}
 
 		}
 		System.out.println("main exit...");
