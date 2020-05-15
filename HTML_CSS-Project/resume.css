@@ -8,3 +8,16 @@ body {
 .resumecontent{
   background-color: #355070;
 }
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('images/LCnUtl.jpg');
+  width:auto;
+  height: 800px;
+  filter: blur(2px);
+}
