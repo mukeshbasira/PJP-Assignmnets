@@ -13,12 +13,14 @@ link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/MongoDB_
 ## WEEK 3 BATCH 1
 link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/Prime_Name
 
+
 Accept username from user and print prime equivalent of that
 example -
  FADE -> d,2,7,b. (hexadecimal equivalent)
 
 ## WEEK 4 BATCH 1
 link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/Synonym-Finder/src/Language
+
 Write a java program to accept the string which will give the synonym of the given word, considering below scenario.
 
 1. Initialise a static map with the data structure : Map<String, Set<String>>, which holds the given value
@@ -43,6 +45,7 @@ GoodEvening
 
 ## WEEK 5 BATCH 1  
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/QuizApp
+
 Write a java program, to build a quiz application with the below requirements
 
 1. The user should be asked for the question in below format
