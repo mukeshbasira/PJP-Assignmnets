@@ -190,7 +190,7 @@ header {
   display: block;
   padding: 8px;
   text-align: left;
-  border: solid red;
+  border: solid black;
   white-space: normal;
   float: none;
   outline: 0
@@ -241,6 +241,16 @@ header {
 
 }
 
+#extraadds li , #subjects li ,#subjects li,#Projects li, #TechnicalSkills li {
+	background-color: #4CAF50;
+	border : none;
+	color: purple;
+	padding: 10px 10px;
+	text-decoration: none;
+	margin: 4px 2px;
+	border: solid black;
+
+}
  input[type=submit]{
  background-color: #4CAF50;
  border : none;

@@ -24,7 +24,6 @@
   <a class="bar-item bar-button" href="#"id="profile-picLink">profile-pic</a>
   <a class="bar-item bar-button" href="#" id="AcadDetailsLink">AcadDetails</a>
   <a class="bar-item bar-button" href="#" id="TechnicalDetailsLink">TechnicalDetails</a>
-  <a class="bar-item bar-button" href="#" id="Add-SubjectsLink">Add Subjects</a>
   <a class="bar-item bar-button" href="#" id="Extra-Curricular-ActivitiesLink">extra</a>
   <a class="bar-item bar-button" href="#" id="GenerateResume">GenerateResume</a>
 
@@ -42,25 +41,41 @@
   <input type="submit" value="Submit" id="basic-detailsSubmit">
 </section>
 
-<section class='AcadDetails'><label for='DegreeName'>Degree Name</label><input id='DegreeName' placeholder='Enter ur degree name'><label for='College'>College</label><input id='college' placeholder='Enter ur college name'>
-<input type="submit" value="Submit" id="AcadDetailsSubmit"></section>
-<section class='profile-pic'><label for='profile-pic'>Add profile pic here </label> <input id="picture" type="file" accept="image/*" capture="user" placeholder="Add image">
-  <img src="" id="showimage"  />
+<section class='AcadDetails'>
+  <label for='DegreeName'>Degree Name</label>
+  <input id='DegreeName' placeholder='Enter ur degree name'>
+  <label for='College'>College</label>
+  <input id='college' placeholder='Enter ur college name'>
+<input type="submit" value="Submit" id="AcadDetailsSubmit">
+</section>
+<section class='profile-pic'>
+  <label for='profile-pic'>Add profile pic here </label>
+   <input id="picture" type="file" accept="image/*" capture="user" placeholder="Add image">
+  <img src="" id="showimage"  /> 
+</section>
 <section class='TechnicalDetails'>
   <label for='Projects'>Add Projects</label>
 
 <input id='addProjects' placeholder='enter project'>
-  <button id='btnAddProjects'>+</button>
+  
+  <input type="submit" value="Add more" id='btnAddProjects'>
+
+
   <ul id='Projects'>
   </ul>
 
   <label for='Subjects'>Add Subjects</label>
   <input id='addsubject' placeholder='enter subject'>
-  <button id='btnAddSubjects'>+</button>
+  
+  <input type="submit" value="Add more" id='btnAddSubjects' >
+
   <ul id='subjects'>
   </ul>
   <label for='TechnicalSkills'>Add TechnicalSkills</label>
-  <button id='btnAddTechnicalSkills'>+</button>
+    <input id='addTechnicalSkills' placeholder='enter TechnicalSkill'>
+  
+  <input type="submit" value="Add more" id='btnAddTechnicalSkills' >
+
   <ul id='TechnicalSkills'>
   </ul>
   <input type="submit" value="Submit" id="TechnicalDetailsSubmit">
@@ -69,18 +84,12 @@
 
   <label for='Extra-Curricular Activities' >Add Extra-Curricular Activities</label>
   <input id='Extra' placeholder='enter activities'>
-
-  <button id='Extra-Curricular-Activities'>+</button>
-  <ul id='Projects'>
+  <input type="submit" value="Add more" id='Extra-Curricular-Activities' >
+  <ul id='extraadds'>
+    
   </ul>
   <input type="submit" value="Submit" id="ExtraSubmit">
 </section>
-
-
-
-
-
-
 
 </div>
 

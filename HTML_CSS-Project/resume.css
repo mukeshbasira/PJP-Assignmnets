@@ -5,10 +5,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.resumecontent{
-  background-color: #355070;
-}
-.content:before {
+
+
+.resumecontent:before {
   content: "";
   position: fixed;
   left: 0;
