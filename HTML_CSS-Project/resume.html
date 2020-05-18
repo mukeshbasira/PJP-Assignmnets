@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <title>Resume Builder</title>
 <!doctype html>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="resume.css">
-<script src="resume.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+<script src="new.js" defer></script>
 <body>
 <div class="resumecontent">
   <div class="header">
     <div id="profileDetails">
-      <span><<img src="" id="tableBanner" /></span>
-      <span id="name"> <span>
+      <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" id="tableBanner" />
+    
+      <p id="name"> <p>
     </div>
     <div id="Basic">
-
-        <span id="email"><span>
-        <span id="mobile"> <span>
+        
+        <p id="email"><p>
+          
+        <p id="mobile"><p>
     </div>
     <hr>
 </div>
@@ -23,30 +30,36 @@
 
 <div class="AcadDetails">
   <div class="college">
+  
+    <p id="college"> <p>
+      
+    <p id="degree"> <p>
+  </div>
+  </div>
 
-    <span id="college"> <span>
-    <span id="degree"> <span>
-  </div>
-  </div>
-</div>
 
 <div class="TechnicalSkills">
-
+   <p>Subjects  : </p>
   <ul id="resumesubfill">
     
   </ul>
+  <p>Projects  : </p>
   <ul id="resumeprojfill">
     
   </ul>
+  <p>Skills  : </p>
   <ul id="resumeskillsfill">
     
   </ul>
 
 </div>
 <div class="Extra">
+  <p>Extras  : </p>
   <ul id="resumeExtras">
   
   </ul>
 </div>
 </div>
+<input type="submit" value="Submit" id="pdf">
+
 </body>

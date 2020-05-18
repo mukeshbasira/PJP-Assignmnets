@@ -142,90 +142,20 @@ function verifytechnical()
 
 
 generateresume.addEventListener("click", function()
-{
-  if(verifybasic() && verifytechnical() && verifyprofilepic() && verifyAcad())
+{ if(verifybasic()&& verifyAcad()&&verifytechnical()&&verifyprofilepic())
   {
-      fetchimage();
-      fetchtechSkills();
-      fetchBasicDetails();
-      fetchExtras();
-      fetchAcad();
+  var personObject = { name: username, email : email , mobile : mobile , college:college, DegreeName:DegreeName,extras:extras,  techSkills:techSkills , subs: subs , projects : projects , };
+
+localStorage.setItem("personObject", JSON.stringify(personObject));
     window.location.href="resume.html";
   }else{
-    alert("please fill marked details")
+    alert("fill marked details");
   }
+
 });
 
 
-function fetchimage () {
-  var img = document.querySelector("#tableBanner");
 
-  var dataImage = localStorage.getItem('imgData');
-  img.src = "data:image/png;base64," + dataImage;
-}
-
-function fetchtechSkills()
-{
-
-  if(subs.length>0)
-  {  var resumesubfill =   document.querySelector("#resumesubfill");
-    for(i = 0;i<subs.length;i++)
-    {
-
-      var li = document.createElement('li');
-      li.appendChild(document.createTextNode(subs[i]));
-       resumesubfill.appendChild(li);
-     }
-    }
-
-    if(projects.length>0)
-    {  var resumeprojfill =   document.querySelector("#resumeprojfill");
-      for(i = 0;i<projects.length;i++)
-      {
-
-        var li = document.createElement('li');
-        li.appendChild(document.createTextNode(projects[i]));
-         resumeprojfill.appendChild(li);
-       }
-      }
-      if(techSkills.length>0)
-      {  var resumeskillsfill =   document.querySelector("#resumeskillsfill");
-        for(i = 0;i<techSkills.length;i++)
-        {
-
-          var li = document.createElement('li');
-          li.appendChild(document.createTextNode(techSkills[i]));
-           resumeskillsfill.appendChild(li);
-         }
-        }
-
-
-}
-function fetchBasicDetails()
-{
-  document.querySelector('#name').innerHTML = username;
-  document.querySelector('#email').innerHTML = email;
-  document.querySelector('#mobile').innerHTML = mobile;
-}
-function fetchAcad() {
-
-document.querySelector('#college').innerHTML = college
-document.querySelector('#DegreeName').innerHTML = DegreeName;
-}
-function fetchExtras() {
-
-if(extras.length>0)
-{  var resumeExtras =   document.querySelector("#resumeExtras");
-  for(i = 0;i<extras.length;i++)
-  {
-
-    var li = document.createElement('li');
-    li.appendChild(document.createTextNode(extras[i]));
-     resumeExtras.appendChild(li);
-   }
-  }
-
-}
 function getBase64Image(img) {
     var canvas = document.createElement("canvas");
     canvas.width = img.width;
