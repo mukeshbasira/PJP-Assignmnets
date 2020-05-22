@@ -12,3 +12,5 @@ JenkinsAssignment/target
 /QuizApp/.settings
 /QuizApp/bin
 /mobile/.settings
+/mobile/target
+/mobile/test
