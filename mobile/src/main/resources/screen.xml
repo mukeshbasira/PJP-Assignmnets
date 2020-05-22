@@ -3,6 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="screen" class="screen.screenImp"></bean>
+<bean id="screen" class="screen.screenImp">
+<property name="bre" value="100"></property>
+<property name="len" value="400"></property></bean>
 
 </beans>

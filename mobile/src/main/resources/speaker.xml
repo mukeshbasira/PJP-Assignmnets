@@ -4,6 +4,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean id="speaker" class="speaker.speakerImp">
-<property name="" value=""></property>
-<property name="" value=""></property></bean>
+<property name="volInteger" value="1"></property>
+</bean>
 </beans>

@@ -2,7 +2,8 @@ package camera;
 
 public interface Capture {
 	public Integer mg_pixels();
-	public Integer ap();
+
+	public Double ap();
 	public Boolean OIS();
 
 }

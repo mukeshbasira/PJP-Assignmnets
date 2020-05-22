@@ -1,7 +1,7 @@
 screen/screenImp.class
-phone/mobile.class
 speaker/Sound.class
 screen/Display.class
-speaker/speakerImp.class
 camera/Capture.class
+phone/mobile.class
+speaker/speakerImp.class
 camera/cameraImp.class

@@ -2,12 +2,15 @@ package speaker;
 
 public class speakerImp implements Sound {
 
+	private Integer volInteger;
+
 	public Integer Vol() {
-		return null;
+		return volInteger;
 	}
 
-	public Object type() {
-		return null;
+	public void setVolInteger(Integer volInteger) {
+		this.volInteger = volInteger;
 	}
+
 
 }
