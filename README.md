@@ -89,7 +89,7 @@ Question: Consider an application to be developed for various size devices like 
 
 
 1. Considering the application is loaded on desktop with size 786*600px the page should load the text with Arial, 36pt, Blue Color.
- 2.  When the page is loaded with 300x350 px then the fonts to be Helvetica, 24pt,, and in Red Color.
+2.  When the page is loaded with 300x350 px then the fonts to be Helvetica, 24pt,, and in Red Color.
 
 3.  And when the screen size happens to be 100x100 then font Courier, 18pt, Purple color.
 
@@ -99,7 +99,7 @@ Question: Consider an application to be developed for various size devices like 
 
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week7/mobile
 
-#Question Topic: Spring Framework IoC
+-----Question Topic: Spring Framework IoC------
 
 Question: Consider you are building a Mobile which has dependencies of Camera, Screen, Speaker which has-a relation. 
 
