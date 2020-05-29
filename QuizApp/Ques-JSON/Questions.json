@@ -1,0 +1,22 @@
+{ "questions": [
+{
+"question" : "what is ur fav game",
+"options" : {
+"A" : "cricket",
+"B" : "football",
+"C" : "fff",
+"D" : "ice",
+},
+"ans" : "D",
+},{
+"question" : "what is ur fav icecream",
+"options" : {
+"A" : "vanila",
+"B" : "ttt",
+"C" : "choc0",
+"D" : "tom",
+},
+"ans" : "B",
+}
+]
+}
