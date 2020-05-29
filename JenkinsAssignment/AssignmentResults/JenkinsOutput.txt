@@ -1,0 +1,165 @@
+Started by timer
+Obtained jenkinsfile from git https://github.com/mukeshbasira/simple-java-maven-app.git
+Running in Durability level: MAX_SURVIVABILITY
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+No credentials specified
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/mukeshbasira/simple-java-maven-app.git # timeout=10
+Fetching upstream changes from https://github.com/mukeshbasira/simple-java-maven-app.git
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/mukeshbasira/simple-java-maven-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/week1^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/week1^{commit} # timeout=10
+Checking out Revision d01bc1c5a00c46c0bd87297522ee50dfa86fe70f (refs/remotes/origin/week1)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f d01bc1c5a00c46c0bd87297522ee50dfa86fe70f # timeout=10
+Commit message: "updated if not executable jar in jenkinsfile"
+ > /usr/bin/git rev-list --no-walk d01bc1c5a00c46c0bd87297522ee50dfa86fe70f # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Tool Install)
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (remote)
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] git
+No credentials specified
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/mukeshbasira/simple-java-maven-app.git # timeout=10
+Fetching upstream changes from https://github.com/mukeshbasira/simple-java-maven-app.git
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/mukeshbasira/simple-java-maven-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision ae83c65f35f099243788d00034d31a8875c670c7 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f ae83c65f35f099243788d00034d31a8875c670c7 # timeout=10
+ > /usr/bin/git branch -a -v --no-abbrev # timeout=10
+ > /usr/bin/git branch -D master # timeout=10
+ > /usr/bin/git checkout -b master ae83c65f35f099243788d00034d31a8875c670c7 # timeout=10
+Commit message: "maven quickstart project added"
+First time build. Skipping changelog.
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] sh
++ mvn -Dmaven.test.failure.ignore=true clean package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------< PS.maven.quick:PS-weekly-java-project >----------------
+[INFO] Building PS-weekly-java-project 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ PS-weekly-java-project ---
+[INFO] Deleting /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ PS-weekly-java-project ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ PS-weekly-java-project ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ PS-weekly-java-project ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ PS-weekly-java-project ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ PS-weekly-java-project ---
+[INFO] Surefire report directory: /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running PS.maven.quick.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ PS-weekly-java-project ---
+[INFO] Building jar: /Users/mukeshbasira/.jenkins/workspace/Weekly-project-PS/target/PS-weekly-java-project-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.258 s
+[INFO] Finished at: 2020-04-10T00:51:30+05:30
+[INFO] ------------------------------------------------------------------------
+Post stage
+[Pipeline] junit
+Recording test results
+[Pipeline] archiveArtifacts
+Archiving artifacts
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (output)
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] tool
+[Pipeline] envVarsForTool
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] sh
++ ls
+README.md
+pom.xml
+src
+target
+[Pipeline] sh
++ java -cp target/PS-weekly-java-project-1.0-SNAPSHOT.jar PS.maven.quick.App
+Hello World!
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
