@@ -8,7 +8,7 @@ link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/JenkinsA
 
 ## WEEK 2 BATCH 2
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/MongoDB_Assignment
-![Alt text](MongoDB_Assignment/UML.png?raw=true "UML_Diagram_For_DB")
+![Alt text](UML.png?raw=true "UML_Diagram_For_DB")
 
 ## WEEK 3 BATCH 1
 link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/Prime_Name
