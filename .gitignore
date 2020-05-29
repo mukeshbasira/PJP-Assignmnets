@@ -1,7 +1,15 @@
 JenkinsAssignment/target
-/.DS_Store
+.DS_Store
 .classpath
 .project
 /bin
 /.settings
 /MongoDB_Assignment/mongodb
+/Prime_Name/.settings
+/Prime_Name/bin
+/Synonym-Finder/.settings
+/Synonym-Finder/bin
+/QuizApp/.settings
+/QuizApp/bin
+/mobile/.settings
+/mobile/test
