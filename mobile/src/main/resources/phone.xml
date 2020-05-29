@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="mobile" class="phone.mobile" autowire="byType" >
+<bean id="mobile" class="phone.mobile" autowire="byType" scope="singleton" >
 <property name="price" value="50000"></property>
 <property name="brand" value="apple"></property>
 <property name="name" value="iPhone XS"></property>
