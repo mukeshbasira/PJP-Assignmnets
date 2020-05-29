@@ -3,15 +3,17 @@
 | PS weekly assignment |
  ----------------------
 ## WEEK 1 BATCH 1  
-link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/JenkinsAssignment
+link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week1
+
 - Build will be triggered on 12:51 AM everyday( 51 0 * * * (jenkins trigger))
 
 ## WEEK 2 BATCH 2
-link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/MongoDB_Assignment
+link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week2
+
 ![Alt text](UML.png?raw=true "UML_Diagram_For_DB")
 
 ## WEEK 3 BATCH 1
-link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/Prime_Name
+link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week3
 
 
 Accept username from user and print prime equivalent of that
@@ -19,7 +21,7 @@ example -
  FADE -> d,2,7,b. (hexadecimal equivalent)
 
 ## WEEK 4 BATCH 1
-link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/Synonym-Finder/src/Language
+link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week4
 
 Write a java program to accept the string which will give the synonym of the given word, considering below scenario.
 
@@ -44,7 +46,7 @@ GoodEvening
 
 
 ## WEEK 5 BATCH 1  
-link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/QuizApp
+link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week5
 
 Write a java program, to build a quiz application with the below requirements
 
@@ -83,7 +85,8 @@ class Question {
 
 
 ## WEEK 6 BATCH 1  
-link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6/HTML_CSS-Project
+link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week6
+
 
 Question: Consider an application to be developed for various size devices like desktop, tablet, mobile.  And the company wants to test with the POC (Proof Of Concept), below are the requirements.
 
@@ -97,7 +100,8 @@ Question: Consider an application to be developed for various size devices like 
 
 ## WEEK 7 BATCH 1  
 
-link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week7/mobile
+link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week7
+
 
 -----Question Topic: Spring Framework IoC------
 
