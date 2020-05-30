@@ -28,16 +28,16 @@ Write a java program to accept the string which will give the synonym of the giv
 1. Initialise a static map with the data structure : Map<String, Set<String>>, which holds the given value
 
 GoodMorning
-                GoodMorning
+               { GoodMorning
                 Shubhodaya
                 Shubhohday
-                Bonjour
+                Bonjour}
 
 GoodEvening
-                good Evening
+              {  good Evening
                 Shubha sange
                 susandhya
-                Bonsoir
+                Bonsoir}
 
 2. use scanner to accept the string from the end user, assuming if the user gives: GoodMorning, show the values associated for the same.
 
@@ -92,9 +92,9 @@ Question: Consider an application to be developed for various size devices like 
 
 
 1. Considering the application is loaded on desktop with size 786*600px the page should load the text with Arial, 36pt, Blue Color.
-2.  When the page is loaded with 300x350 px then the fonts to be Helvetica, 24pt,, and in Red Color.
+2. When the page is loaded with 300x350 px then the fonts to be Helvetica, 24pt,, and in Red Color.
 
-3.  And when the screen size happens to be 100x100 then font Courier, 18pt, Purple color.
+3. And when the screen size happens to be 100x100 then font Courier, 18pt, Purple color.
 
 
 
