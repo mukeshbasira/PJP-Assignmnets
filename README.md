@@ -10,7 +10,7 @@ link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week1
 ## WEEK 2 BATCH 2
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week2
 
-![Alt text](UML.png?raw=true "UML_Diagram_For_DB")
+![Alt text](UML-Diagrams/UML1.png?raw=true "UML_Diagram_For_DB")
 
 ## WEEK 3 BATCH 1
 link -  https://github.com/mukeshbasira/simple-java-maven-app/tree/week3
