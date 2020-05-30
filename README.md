@@ -126,6 +126,9 @@ Note: Make sure to use auto wire.
 
 
 ## WEEK 8 BATCH 1  
+
+link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week8
+
 ![Alt text](UML-Diagrams/UML2.png?raw=true "UML_Diagram_For_App")
 
 Given the architecture diagram from the manage you are asked to create an end to end program flow with following pointers.
