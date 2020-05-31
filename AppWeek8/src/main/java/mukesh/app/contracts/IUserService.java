@@ -10,10 +10,10 @@ public interface IUserService {
 
 	public List<User> getAllUsers();
 
-	public User Insertuser(User u) throws NametooShortException;
+	public Boolean Insertuser(User u) throws NametooShortException;
 
-	public User UpdateUser(User u);
+	public Boolean UpdateUser(User u);
 
-	public User DeleteUser(User u);
+	public Boolean DeleteUser(User u);
 
 }
