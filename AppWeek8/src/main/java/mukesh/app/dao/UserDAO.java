@@ -9,21 +9,24 @@ public class UserDAO implements IuserDAO {
 
 
 
-	public void saveUserdb(User u) {
+	public Boolean saveUserdb(User u) {
 		// TODO Auto-generated method stub
 		System.out.println("saved" + u);
+		return false;
 	}
 
-	public void updateUserdb(User u) {
+	public Boolean updateUserdb(User u) {
 
 		System.out.println("update" + u);
+		return false;
 	}
 
-	public void deleteUserdb(User u) throws Exception {
+	public Boolean deleteUserdb(User u) throws UserNotFoundException {
 		if (!u.found()) {
 			throw new UserNotFoundException("User not found" + u.getFirstName());
 		}
 		System.out.println("Delete" + u);
+		return false;
 	}
 
 	public List<User> getAllUsersdb() {

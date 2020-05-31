@@ -9,32 +9,41 @@ import mukesh.app.model.User;
 
 public class UserService implements IUserService {
 
-	UserDAO dao;
+	UserDAO dao = new UserDAO();
 
 	public List<User> getAllUsers() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public User Insertuser(User u) throws NametooShortException {
+	public Boolean Insertuser(User u) throws NametooShortException {
 		if(u.getFirstName().length() < 4)
 		{
 			throw new NametooShortException("Short name exception " + u.getFirstName());
 		}
+
+		Boolean result = dao.saveUserdb(u);
 		System.out.println(u + "Inserted");
-		return null;
+		return result;
 	}
 
-	public User UpdateUser(User u) {
+	public Boolean UpdateUser(User u) {
 		// TODO Auto-generated method stub
 		System.out.println(u + "updated");
-		return null;
+		Boolean result = dao.updateUserdb(u);
+		return result;
 	}
 
-	public User DeleteUser(User u) {
+	public Boolean DeleteUser(User u) {
 		// TODO Auto-generated method stub
+		try {
+			Boolean result = dao.deleteUserdb(u);
+		} catch (Exception e) {
+			throw new NametooShortException(e);
+		}
+
 		System.out.println(u + "Deleted");
-		return null;
+		return result;
 	}
 
 

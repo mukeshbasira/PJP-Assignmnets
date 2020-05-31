@@ -7,11 +7,11 @@ import mukesh.app.model.User;
 
 public interface IuserDAO {
 
-	void saveUserdb(User u);
+	public Boolean saveUserdb(User u);
 
-	void updateUserdb(User u);
+	public Boolean updateUserdb(User u);
 
-	void deleteUserdb(User u) throws UserNotFoundException;
+	public Boolean deleteUserdb(User u) throws UserNotFoundException;
 
 	public List<User> getAllUsersdb();
 
