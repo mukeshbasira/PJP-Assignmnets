@@ -1,6 +1,9 @@
 
 | PS weekly assignment |
 ========================
+
+* Page => https://mukeshbasira.github.io/simple-java-maven-app/
+
 1.[WEEK 1](#WEEK-1-BATCH-1)
 
 2.[WEEK 2](#WEEK-2-BATCH-2)
