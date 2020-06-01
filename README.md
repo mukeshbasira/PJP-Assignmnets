@@ -1,9 +1,15 @@
 
- ----------------------
+========================
 | PS weekly assignment |
- ----------------------
-
-[WEEK 7](#WEEK-7-BATCH-1)
+========================
+*[WEEK 1](#WEEK-1-BATCH-1)
+*[WEEK 2](#WEEK-2-BATCH-2)
+*[WEEK 3](#WEEK-3-BATCH-1)
+*[WEEK 4](#WEEK-4-BATCH-1)
+*[WEEK 5](#WEEK-5-BATCH-1)
+*[WEEK 6](#WEEK-6-BATCH-1)
+*[WEEK 7](#WEEK-7-BATCH-1)
+*[WEEK 8](#WEEK-8-BATCH-1)
 
 ## WEEK 1 BATCH 1  
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week1
