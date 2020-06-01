@@ -5,8 +5,24 @@ import mukesh.app.model.User;
 import mukesh.app.service.UserService;
 
 public class UserManager {
-	UserService manager = new UserService();
-	User user = new User();
+	UserService serviceManger;
+	User user;
+
+	public UserService getserviceManger() {
+		return serviceManger;
+	}
+
+	public void setserviceManger(UserService serviceManger) {
+		this.serviceManger = serviceManger;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 
 	public UserManager(String nameString, String lastname, int id) throws NametooShortException {
 		user.setFirstName(nameString);
@@ -20,7 +36,7 @@ public class UserManager {
 		user.setFirstName(nameString);
 		user.setLastName(lastname);
 
-		manager.Insertuser(user);
+		serviceManger.Insertuser(user);
 	}
 
 	public UserManager() {
@@ -29,8 +45,8 @@ public class UserManager {
 
 	public boolean UserAdd(User user) throws NametooShortException {
 
-		manager.Insertuser(user);
-		return true;
+		Boolean resultBoolean = serviceManger.Insertuser(user);
+		return resultBoolean;
 
 	}
 

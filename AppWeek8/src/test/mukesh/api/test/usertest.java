@@ -1,14 +1,9 @@
 package mukesh.api.test;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-
-import java.sql.SQLException;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -23,28 +18,31 @@ import mukesh.app.service.UserService;
 
 public class usertest {
 
-	private static final int ORDER_ID = 123;
 	@Mock
-	UserService userservice;
+	UserService serviceManger;
 	UserDAO userDAO;
 
 	private UserManager manager;
 	private UserService service;
-	private User user;
 
 	@Before
 	public void setup() throws NametooShortException {
 		MockitoAnnotations.initMocks(this);
+		manager = new UserManager();
+		manager.setserviceManger(serviceManger);
 
 	}
 
 	@Test
-	public void Add_user_to_manager_should_add_user() {
+	public void Add_user_to_manager_should_add_user() throws NametooShortException {
 
-		when(service.Insertuser(user)).thenReturn(true);
-		boolean result = ser
-				assertTrue(result);
 
+		User user = new User();
+		when(serviceManger.Insertuser(user)).thenReturn(true);
+		boolean result = manager.UserAdd(user);
+
+		assertTrue(result);
+		verify(serviceManger, atLeast(1)).Insertuser(user);
 
 
 	}
