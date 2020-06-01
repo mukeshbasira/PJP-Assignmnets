@@ -36,7 +36,7 @@ public class UserManager {
 		user.setFirstName(nameString);
 		user.setLastName(lastname);
 
-		serviceManger.Insertuser(user);
+		UserAdd(user);
 	}
 
 	public UserManager() {

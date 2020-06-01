@@ -1,5 +1,7 @@
 package mukesh.api.test;
 
+
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.verify;
@@ -11,19 +13,16 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import mukesh.app.controller.UserManager;
-import mukesh.app.dao.UserDAO;
 import mukesh.app.exception.NametooShortException;
 import mukesh.app.model.User;
 import mukesh.app.service.UserService;
 
-public class usertest {
+public class Usertest {
 
 	@Mock
 	UserService serviceManger;
-	UserDAO userDAO;
 
 	private UserManager manager;
-	private UserService service;
 
 	@Before
 	public void setup() throws NametooShortException {
@@ -34,8 +33,7 @@ public class usertest {
 	}
 
 	@Test
-	public void Add_user_to_manager_should_add_user() throws NametooShortException {
-
+	public void Controller_Add_user_to_serviceManger_should_add_user() throws NametooShortException {
 
 		User user = new User();
 		when(serviceManger.Insertuser(user)).thenReturn(true);
@@ -44,9 +42,19 @@ public class usertest {
 		assertTrue(result);
 		verify(serviceManger, atLeast(1)).Insertuser(user);
 
-
 	}
 
+	@Test
+	public void Controller_Add_user_to_serviceManger_should_not_add_user() throws NametooShortException {
+
+		User user = new User();
+		when(serviceManger.Insertuser(user)).thenReturn(false);
+		boolean result = manager.UserAdd(user);
+
+		assertFalse(result);
+		verify(serviceManger, atLeast(1)).Insertuser(user);
+
+	}
 
 
 
