@@ -3,7 +3,7 @@
 | PS weekly assignment |
  ----------------------
 
-[WEEK 1](#WEEK-1)
+[WEEK 7](#WEEK-7-BATCH-1)
 
 ## WEEK 1 BATCH 1  
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week1
