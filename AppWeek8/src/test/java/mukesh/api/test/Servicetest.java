@@ -56,6 +56,7 @@ public class Servicetest {
 	public void serviceManger_add_user__should_add_user_toDB() throws NametooShortException {
 
 		User user = new User();
+		user.setFirstName("uuiwqoiw");
 		when(userDAO.saveUserdb(user)).thenReturn(true);
 		boolean result = servicemanager.Insertuser(user);
 		assertTrue(result);
@@ -63,13 +64,14 @@ public class Servicetest {
 
 	}
 
-	//	@Test(expected = NametooShortException.class)
-	//	public void placeOrder_Should_Throw_BOException() throws NametooShortException {
-	//		User user = new User();
-	//		when(userDAO.saveUserdb(user)).thenReturn(true);
-	//		boolean result = serviceManger.Insertuser(user);
-	//		assertTrue(result);
-	//		verify(serviceManger).Insertuser(user);
-	//
-	//	}
+	@Test(expected = NametooShortException.class)
+	public void placeOrder_Should_Throw_BOException() throws NametooShortException {
+		User user = new User();
+		user.setFirstName("ss");
+		when(userDAO.saveUserdb(user)).thenReturn(true);
+		boolean result = servicemanager.Insertuser(user);
+		assertTrue(result);
+		verify(userDAO).saveUserdb(user);
+
+	}
 }

@@ -46,6 +46,7 @@ public class UserService implements IUserService {
 
 	public Boolean DeleteUser(User u) throws UserNotFoundException {
 		// TODO Auto-generated method stub
+
 		Boolean result = dao.deleteUserdb(u);
 
 
