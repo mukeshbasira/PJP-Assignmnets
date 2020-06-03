@@ -160,8 +160,4 @@ Given the architecture diagram from the manage you are asked to create an end to
 7. Have appropriate contract / interfaces  - com.training.interfaces
 8. Keep all exception in – com.training.exceptions
 
-
-testing 1
-testing 2
-testing 3
 ------------------------------------------------------------------------
