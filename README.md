@@ -163,10 +163,13 @@ Given the architecture diagram from the manage you are asked to create an end to
 
 <<<<<<< HEAD
 testing 1
+<<<<<<< HEAD
 testing 2
 testing 3
 =======
 
 
 >>>>>>> parent of 504d71a... test 1
+=======
+>>>>>>> parent of f4b6073... test 2
 ------------------------------------------------------------------------
