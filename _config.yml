@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
 logo: site-images/m2.png
+github:
+  zip_url: http://github.com/mukeshbasira/simple-java-maven-app/archive/master.zip
