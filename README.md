@@ -160,22 +160,5 @@ Given the architecture diagram from the manage you are asked to create an end to
 7. Have appropriate contract / interfaces  - com.training.interfaces
 8. Keep all exception in – com.training.exceptions
 
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-testing 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-testing 2
-testing 3
-=======
-
-
->>>>>>> parent of 504d71a... test 1
-=======
->>>>>>> parent of f4b6073... test 2
-=======
->>>>>>> parent of f4b6073... test 2
->>>>>>> 93bedc9598d4710848cad8afb160d2eeb3fe2719
 ------------------------------------------------------------------------
