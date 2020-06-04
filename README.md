@@ -23,8 +23,6 @@ Consider you are asked to create servlets for below end points
 Eventually over course of time the company needs many such servlets due to this maintaining multiple servlets become difficult, create a single servlets which has the signature given below
 
 
-not 100% sure if this is the same thing or not, but I just setup some xml snippets in my readme.md and used the
-
 ```xml
 <servlet>
                 <servlet-name>hi</servlet-name>
