@@ -20,7 +20,7 @@
 
 8.[WEEK 8](#WEEK-8-BATCH-1)
 
-8.[WEEK 9](#WEEK-9-BATCH-1)
+9.[WEEK 9](#WEEK-9-BATCH-1)
 
 ## WEEK 1 BATCH 1  
 link - https://github.com/mukeshbasira/simple-java-maven-app/tree/week1
