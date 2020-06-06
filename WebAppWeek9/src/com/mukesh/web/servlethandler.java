@@ -22,25 +22,23 @@ public class servlethandler extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String pathInfo = request.getPathInfo();
-		switch (pathInfo) {
-		case "/BuyProduct":
-
-			new Buyproduct();
-
-			break;
-		case "/Hello":
-			System.out.println(pathInfo);
-			hello hello = new hello();
-			hello.doGet(request, response);
-			break;
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		System.out.println(pathInfo);
 
 
-		default:
-			response.setContentType("text/html");
+		if(pathInfo.equals("/BuyProduct")){
+
+			request.getRequestDispatcher("/byproduct").forward(request, response);
+		}
+		else if (pathInfo.equals("/hello")) {
 
 
-			PrintWriter out = response.getWriter();
+			request.getRequestDispatcher("/hello").forward(request, response);
+		}
 
+
+		else {
 
 			out.println("<html><body>");
 
@@ -49,15 +47,16 @@ public class servlethandler extends HttpServlet {
 			out.println("<hr> ");
 
 			out.println(
-					"Two endpoints are implemented for tests 1. /Hello  2. /BuyProduct" + "</h2>");
+					"Two endpoints are implemented for tests 1. /hello  2. /BuyProduct" + "</h2>");
 
 
 			out.println("</body></html>");
-
-			break;
 		}
 
+
 	}
+
+
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

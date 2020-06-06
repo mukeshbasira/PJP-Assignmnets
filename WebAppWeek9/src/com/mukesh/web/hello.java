@@ -4,20 +4,14 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@WebServlet(urlPatterns = "/hello")
 public class hello extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public hello() {
-		super();
-		System.out.println("in hello");
-	}
 
 
 	@Override
@@ -30,7 +24,7 @@ public class hello extends HttpServlet {
 
 		out.println("<html><body>");
 
-		out.println("<h2>hello </h2>");
+		out.println("<h2>in hello servlet </h2>");
 		out.println("<hr> ");
 
 
