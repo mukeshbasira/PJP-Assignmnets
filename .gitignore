@@ -4,5 +4,7 @@
 .project
 /bin
 /.settings
-
 /.dbeaver
+.mvn
+mvnw
+mvnw.cmd
