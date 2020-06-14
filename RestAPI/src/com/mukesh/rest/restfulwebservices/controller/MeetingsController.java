@@ -1,6 +1,7 @@
 package com.mukesh.rest.restfulwebservices.controller;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mukesh.rest.restfulwebservices.dao.MeetingsDao;
 import com.mukesh.rest.restfulwebservices.model.Meeting;
+import com.mukesh.rest.restfulwebservices.model.Participant;
 
 
 
@@ -25,10 +27,15 @@ public class MeetingsController {
 	}
 
 	@GetMapping(path = "/meeting/{id}")
-	public Meeting helloWorldPathVariable(@PathVariable Integer id) {
+	public Meeting FindOneMeeting(@PathVariable Integer id) {
 		return meetingsDao.findOne(id);
 	}
 
+	@GetMapping(path = "/meeting/{id}/participants")
+	public HashSet<Participant> FindMeetingParticipants(@PathVariable Integer id) {
+
+		return meetingsDao.FindParticipants(id);
 
 
+	}
 }
