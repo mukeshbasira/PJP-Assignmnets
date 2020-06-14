@@ -20,7 +20,9 @@ Please keep first set of 5 Meeting in the ArrayList
 
 1. meeting-service
 
-class Meeting {
+class Meeting 
+
+              {
                 
                 private int meetingId;
 
