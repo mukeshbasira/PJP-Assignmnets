@@ -4,7 +4,9 @@
 .project
 /bin
 /.settings
-/.dbeaver
+.dbeaver
+/RestAPI/.dbeaver
 .mvn
 mvnw
 mvnw.cmd
+bin
